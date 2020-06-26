@@ -1,25 +1,39 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "outDir": "build/lib",
+    "module": "esnext",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
+      "es5", "es6", "es7", "es2017"
     ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "declaration": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "baseUrl": "src",
+    "rootDirs": ["src", "stories"],
     "isolatedModules": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
     "noEmit": true,
+    "emitDecoratorMetadata": true,
     "jsx": "react"
   },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": ["node_modules", "build", "scripts"]
 }
